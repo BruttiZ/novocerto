@@ -1,0 +1,65 @@
+/* Estilos para a página e imagem de fundo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo\ projeto.png'); /* Substitua 'sua-imagem-de-fundo.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Cor do texto para tornar o texto visível no fundo preto */
+}
+
+#credit {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+h1 {
+    color: #fff;
+}
+
+/* Estilos para os campos de entrada e rótulos */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Cor do texto para tornar o texto visível no fundo preto */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Cor do texto para tornar o texto visível no fundo branco */
+}
+
+/* Estilos para o botão de aplicar */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a área de resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff; /* Cor do texto para tornar o texto visível no fundo preto */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    padding: 10px;
+}

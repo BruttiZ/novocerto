@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Aplicação de Limite de Cartão</title>
+</head>
+<body>
+    <div id="credit">by: Bruno Cradoso</div>
+    <h1>Aplicação de Limite de Cartão de Crédito</h1>
+
+    <div>
+        <label for="numeroCartao">Cartão:</label>
+        <input type="text" id="numeroCartao">
+    </div>
+
+    <div>
+        <label for="limite">Valor de Limite:</label>
+        <input type="number" id="limite">
+    </div>
+
+    <button onclick="aplicarLimite()">Aplicar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function aplicarLimite() {
+            const numeroCartao = document.getElementById("numeroCartao").value;
+            const limite = document.getElementById("limite").value;
+
+            if (numeroCartao && limite) {
+                const resultado = document.getElementById("resultado");
+                resultado.innerHTML = `O limite do cartão ${numeroCartao} foi alterado para R$ ${limite}. Aguarde de 5-7 dias úteis para processamento.`;
+            } else {
+                alert("Por favor, preencha ambos os campos.");
+            }
+        }
+    </script>
+</body>
+</html>
